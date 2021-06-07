@@ -121,8 +121,8 @@ li {
 
 .center {
     display: flex;
-    align-content: space-between;
-    /* position: relative; */
+    height: 60%;
+    align-items: center;
 }
 
 .bra {
