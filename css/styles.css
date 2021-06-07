@@ -93,16 +93,12 @@ li {
     margin-top: 40px;
     color: #ab5797;    
     font-family: 'Averia Serif Libre';
+    font-size: 1.2rem;
 }
 
 .review {
     color: #ab5797;
     font-family: 'Mate SC', serif;
-}
-
-.pros-cons {
-    position: relative;
-    left: 100px;
 }
 
 .snippet {
@@ -121,8 +117,9 @@ li {
 
 .center {
     display: flex;
-    height: 60%;
     align-items: center;
+    height: 60%;
+    
 }
 
 .bra {
@@ -144,6 +141,28 @@ li {
     color: #dbe6fd;       
     margin: 0 auto 30px;  
     font-size: .9rem;
+}
+
+.pros-cons {
+    position: relative;
+    left: 10px;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+}
+
+.pros {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.cons {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
 }
 
 .footer {
