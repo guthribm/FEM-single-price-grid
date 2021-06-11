@@ -42,7 +42,7 @@ p {
 
 .top-card {
     background-color: white;
-    padding: 25px;
+    padding: 50px 50px 25px 50px;
     border-radius: 7px 7px 0 0;
 }
 
@@ -68,7 +68,7 @@ p {
     display: flex;
     flex-direction: column;
     background-color: hsl(182, 90%, 36%);
-    padding: 25px;    
+    padding: 50px;    
 }
 
 .middle-card h2 {
@@ -88,6 +88,7 @@ p {
 
 .middle-card p {
     margin: 10px 0 30px;
+    grid-auto-flow: column;
 }
 
 .middle-card-button {
@@ -104,14 +105,44 @@ p {
 
 .bottom-card {
     background-color: hsl(179, 62%, 43%);
-    padding: 25px;
+    padding: 50px;
     border-radius: 0 0 9px 9px;
 }
 
 .bottom-card p {
     margin: 6px 0;
+    font-size: 1.1rem;
 }
 
 .bottom-card h2 {
     margin: 5px 0 28px 0;
+}
+
+@media (min-width: 375px) {
+
+    .body-card {
+        display: grid;
+    }
+
+    .top-card h2 {
+        font-size: 2rem;
+    }
+
+    .grid-wrapper-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .top-card p {
+        font-size: 1.35rem; 
+    }
+
+    .middle-card {
+        border-radius: 0 0 0 9px;
+    }
+
+    .bottom-card {
+        border-radius: 0 0 9px 0;
+    }
+
 }
