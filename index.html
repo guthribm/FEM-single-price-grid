@@ -1,147 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cyberpunk Review</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-        <!-- CSS stylesheets -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">        
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;700&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
 
-        <!-- Bootstrap scripts -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="body">
+  <div class="body-card">
 
-    </head>
+    <div class="top-card">
+      <h2>Join our community</h2>
 
-    <body>
-               
-            <div class="title">                
-                <h1>Cyberpunk <strong>2077</strong><span class="review"><strong> Review</strong></span></h1>  
-                <p>(an exercise in HTML and CSS)</p>
-            </div>
+      <p class="focus">30-day, hassle-free money back guarantee</p>
 
-        
-            <div id="group">
-                <div class="group-photo snippet">
-                    <a class="image group-image" href="images/group.png"><img src="images/group.png" alt="group-photo"></a>            
-                    <p>Yes, I'm hear for the gangbang??</p>
-                </div>
-                <p class="group-text">
-                    So, the following is basically just practicing the layout and positioning of elements
-                    in CSS. Creating multiple div's with their own properties, using position and display 
-                    to change layouts as well as float and margin. The layout and design is original (duh, it's 
-                    pretty plain) and the photos are screencaps I found in a folder so this is the game I went with.
-                    All of the text is Lorem Ipsum to use as filler space for actual text that I'm too lazy to write.. 
-                </p>
-                
-                
-            </div>       
-                            
+      <p class="top-card-p">Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.</p>
+    </div>
 
-        <section id='graphics'>
-            <div class="graphics">
-                <h2>Graphics</h2>              
+    <div class="middle-card">
+      <h2>Monthly Subscription</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit suscipit tortor, vel dignissim sem dictum id.
-                    Etiam vulputate nunc sit amet sem porta, vel tempus dolor pellentesque. Etiam luctus libero enim, lacinia tempor tellus
-                    malesuada non. Integer aliquam ipsum nec scelerisque pulvinar. Vivamus justo sapien, ultrices semper consequat eu,
-                    venenatis ac metus. Quisque a dui sed lacus commodo iaculis id eu ante. Phasellus ornare auctor tellus, sit amet
-                    condimentum leo hendrerit malesuada. Fusce convallis iaculis quam eget pretium. Praesent sem odio, bibendum 
-                    convallis sem quis, sagittis lacinia nisi.</p>
+      <h1>&dollar;29 <span>per month</span></h1>
 
-            <div class="center">
-                <div class="smoking snippet">
-                    <a href="images/oral.png"><img class="image oral-image" src="images/oral.png" alt="pleasuring?"></a>
-                    <p><span class='warning'>Warning! </span>This game features tobacco use.</p>
-                </div>
+      <p>Full access for less than &dollar;1 a day</p>
 
-                <div class="bra snippet">
-                    <a href="images/bra.png"><img class="image bra-image" src="images/bra.png" alt="pjs-by-the-water"></a>
-                    <p>Anti-virus installed? Check. Anti-STD installed? Double check!</p>
-                </div>
-            </div>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo vel lacus non efficitur. Curabitur nisl nisi,
-                    vulputate eget gravida at, commodo sed dui. Aenean posuere egestas gravida. Praesent mattis dignissim dui scelerisque
-                    convallis. Nunc rutrum ultrices sem lobortis ultrices. Curabitur non urna non nunc ultrices dictum. Vestibulum ante 
-                    libero, tristique vel velit in, tincidunt iaculis felis. 
-                </p>
-                
-                <hr>
-            </div>
-        </section>
+      <button class="middle-card-button">Sign Up</button>
+    </div>
 
-        
+    <div class="bottom-card">
+      <h2>Why Us</h2>
 
-        <section id="gameplay">
-            <div class="gameplay">
-                <h2>Gameplay</h2>
-                <p>Phasellus ornare auctor tellus, sit amet
-                    condimentum leo hendrerit malesuada. Fusce convallis iaculis quam eget pretium. Praesent sem odio, bibendum 
-                    convallis sem quis, sagittis lacinia nisi.</p>
-                <div class="rear snippet">
-                    <a href="images/rear.png"><img class="image rear-image" src="images/rear.png" alt="rear-end-view"></a>
-                    <p>Baby girl has a BA-DUNK-A-DUNK!</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo vel lacus non efficitur. Curabitur nisl nisi,
-                   vulputate eget gravida at, commodo sed dui. Aenean posuere egestas gravida. Praesent mattis dignissim dui scelerisque
-                   convallis. Nunc rutrum ultrices sem lobortis ultrices. Curabitur non urna non nunc ultrices dictum. Vestibulum ante 
-                   libero, tristique vel velit in, tincidunt iaculis felis.
-                </p>
-                
-                <hr>
-            </div>
-        </section>
+      <p>Tutorials by industry experts</p>
+      <p>Peer &amp; expert code review</p>
+      <p>Coding exercises</p>
+      <p>Access to our GitHub repos</p>
+      <p>Community forum</p>
+      <p>Flashcard decks</p>
+      <p>New videos every week </p>
+    </div>
 
-        
+  </div>
 
-        <section id="final-thoughts">
-            <div class="final-thoughts">
-                <h2>Final Thoughts</h2>
-                <div class="rainy snippet">
-                    <a href="images/rainy.png"><img class="image" src="images/rainy.png" alt="rainy-day"></a>
-                    <p>Pass the soap?</p>
-                </div>
-                <p>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo vel lacus non efficitur. Curabitur nisl nisi,
-                    vulputate eget gravida at, commodo sed dui. Aenean posuere egestas gravida. Praesent mattis dignissim dui scelerisque
-                    convallis. Nunc rutrum ultrices sem lobortis ultrices. Curabitur non urna non nunc ultrices dictum. Vestibulum ante 
-                    libero, tristique vel velit in, tincidunt iaculis felis.
-                </p>
-                
-                <div class='pros-cons' style="text-align: left;">
-                    <div class="pros">
-                        <h3><strong>Pros</strong></h3>
-                        <ul>                    
-                            <li>great graphics</li>
-                            <li>nice sci-fi setting and story</li>
-                            <li>fun game, when it's not buggy</li>
-                            <li>graphic nudity 🤗</li>                    
-                        </ul>
-                    </div>
-                    <div class="cons">
-                        <h3><strong>Cons</strong></h3>
-                        <ul>
-                            <li>can be very buggy..</li>
-                            <li>weak end-game</li>
-                            <li>poor performance</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <hr>
-               
-
-            </div>
-        </section>
-
-            <div class="footer">
-                <p>Soandso Reviews ©2021</p>
-            </div>
-    </body>
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
 </html>
