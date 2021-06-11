@@ -118,6 +118,31 @@ p {
     margin: 5px 0 28px 0;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.foot-item {
+    width: 33%;
+    color: white;
+}
+
+.foot-item a {
+    color: hsl(71, 73%, 54%);
+    text-decoration: none;
+}
+
+.foot-item a:hover {
+    text-decoration: underline;
+    color: hsl(71, 78%, 32%);
+}
+
 @media (min-width: 375px) {
 
     .body-card {
@@ -144,5 +169,13 @@ p {
     .bottom-card {
         border-radius: 0 0 9px 0;
     }
+
+    .footer {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 150px;
+        
+    }
+
 
 }
