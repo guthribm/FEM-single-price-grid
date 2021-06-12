@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://guthribm.github.io/FEM-single-price-grid/)
+- Live Site URL: [https://guthribm.github.io/FEM-single-price-grid/](https://guthribm.github.io/FEM-single-price-grid/)
 
 ## My process
 
