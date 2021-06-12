@@ -42,37 +42,42 @@ p {
 
 .top-card {
     background-color: white;
-    padding: 50px 50px 25px 50px;
+    padding: 30px 30px 25px 30px;
     border-radius: 7px 7px 0 0;
 }
 
 .top-card h2 {
     color: hsl(179, 62%, 43%);
     margin: 0;
-
+    font-size: 1.3rem;
+    font-weight: bolder;
 }
 
 .top-card-p {
     color: hsl(218, 22%, 67%);
     line-height: 1.9;
-    font-size: 14px;
+    font-size: .8rem;
 }
 
 .focus {
     color: hsl(71, 73%, 54%);
     font-weight: 700;
     margin: 20px 0;
+    font-size: .9rem;
+    line-height: 1.5;
+    filter: blur(.2px);
 }
 
 .middle-card {
     display: flex;
     flex-direction: column;
     background-color: hsl(182, 90%, 36%);
-    padding: 50px;    
+    padding: 30px;    
 }
 
 .middle-card h2 {
     margin: 0;
+    font-size: 1.2rem;
 }
 
 .middle-card h1 {
@@ -93,25 +98,32 @@ p {
 
 .middle-card-button {
     color: white;
-    width: 80%;
-    height: 2.5rem;
+    width: 100%;
+    height: 4rem;
     font-weight: bolder;
     background: hsl(71, 73%, 54%);
     border-radius: 5px;
     border: none;
     align-self: center;
-    filter: drop-shadow(2px 5px 8px hsl(189, 86%, 29%));
+    filter: drop-shadow(1px 2px 6px hsl(189, 86%, 29%));
+    font-size: 1.3rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.middle-card-button:hover {
+    background-color: white;
+    color: hsl(71, 73%, 54%);
 }
 
 .bottom-card {
     background-color: hsl(179, 62%, 43%);
-    padding: 50px;
+    padding: 30px;
     border-radius: 0 0 9px 9px;
 }
 
 .bottom-card p {
     margin: 6px 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .bottom-card h2 {
@@ -129,7 +141,9 @@ p {
 }
 
 .foot-item {
-    width: 33%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
     color: white;
 }
 
@@ -143,7 +157,9 @@ p {
     color: hsl(71, 78%, 32%);
 }
 
-@media (min-width: 375px) {
+
+/* Non-Mobile View - Greater than 375 px*/
+@media (min-width: 380px) {
 
     .body-card {
         display: grid;
@@ -159,11 +175,23 @@ p {
     }
 
     .top-card p {
-        font-size: 1.35rem; 
+        font-size: 1.4rem; 
     }
 
     .middle-card {
         border-radius: 0 0 0 9px;
+    }
+
+    .span {
+        font-size: 1.5rem;
+    }
+
+    .middle-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .middle-card p {
+        font-size: 1.4rem;
     }
 
     .bottom-card {
@@ -173,8 +201,11 @@ p {
     .footer {
         flex-direction: row;
         align-items: center;
-        margin-top: 150px;
-        
+        margin-top: 150px;        
+    }
+
+    .foot-item {
+        width: 70%;
     }
 
 
